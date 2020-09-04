@@ -2,6 +2,7 @@
 #import "ViewController.h"
 #import "LXHBanner.h"
 
+#define BannerHeight 128
 @interface ViewController ()
 
 @end
@@ -15,9 +16,9 @@
 }
 
 - (void)createBannerView {
-    NSArray * array = @[@"Demo",@"Demo",@"Demo"];
-    LXHBanner * view = [[LXHBanner alloc]initWithFrame:CGRectMake(16, 100,self.view.frame.size.width - 32, 128) :array];
-    [self.view addSubview:view];
+    NSArray *array = @[@"Demo",@"Demo",@"Demo"];
+    LXHBanner *BannerView = [[LXHBanner alloc]initWithFrame:CGRectMake(16, 100,self.view.frame.size.width - 32, BannerHeight) :array];
+    [self.view addSubview:BannerView];
 }
 
 @end
